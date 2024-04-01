@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script language="javascript">
+		function Display()
+		{	
+			if(st1.selectedIndex == 0)
+			{
+				txtmes.value="please select your country"
+			}
+			else
+			{
+				txtmes.value=st1.value
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Select your country :</h1>
+	<select id="st1" onclick="Display()">
+		<option>---Select---</option>
+		<option>INDIA</option>
+		<option>USA</option>
+		<option>UK</option>
+	</select>
+	</br></br>
+	Your country is : <input type="text" id="txtmes" size=23 readonly/>
+</body>
+</html>

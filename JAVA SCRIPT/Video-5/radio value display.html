@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script language="javascript">
+		function Display()
+		{	
+			if(rtel.checked)
+			{
+				txtmes.value=rtel.value
+			}
+			else if (rtam.checked)
+			{
+				txtmes.value=rtam.value
+			}
+			else if	(rurd.checked)
+			{
+				txtmes.value=rurd.value
+			}
+			else
+			{
+				txtmes.value="please select your language."
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Select your mother tongue :</h1>
+	<input type="radio" id="rtel" value="telugu" name="language"/>Telugu
+	</br>
+	<input type="radio" id="rtam" value="tamil" name="language"/>Tamil
+	</br>
+	<input type="radio" id="rurd" value="urdhu" name="language"/>Urdhu
+	</br></br>
+	<input type="button" id="btnsubmil" value="Submit" onclick="Display()"/>
+	</br></br>
+	Your mother tongue is : <input type="text" id="txtmes" size=23/>
+</body>
+</html>

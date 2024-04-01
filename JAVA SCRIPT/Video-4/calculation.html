@@ -1,0 +1,82 @@
+<html>
+<head>
+<script language="javascript">
+	function displayADD()
+	{
+			var a=txtfn.value
+			var b=txtsn.value
+			var c= +a + +b
+			txtres.value=c
+	}
+		function displaySUB()
+	{
+			var a=txtfn.value
+			var b=txtsn.value
+			var c=a-b
+			txtres.value=c
+	}
+	function displayMULTI()
+	{
+			var a=txtfn.value
+			var b=txtsn.value
+			var c=a*b
+			txtres.value=c
+	}
+	function displayDIV()
+	{
+			var a=txtfn.value
+			var b=txtsn.value
+			var c=a/b
+			txtres.value=c
+	}
+	
+</script>
+<body>
+	<table cellspacing="10">
+		<tr>
+			<td>
+				Enter first number
+			</td>
+			<td>
+				:
+			</td>
+			<td>
+				<input type="text" id="txtfn" size="5"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Enter second number
+			</td>
+			<td>
+				:
+			</td>
+			<td>
+				<input type="text" id="txtsn" size="5"/>
+			</td>
+		</tr>
+	</table>
+	<table  cellpadding=2 cellspacing=4>
+		<tr>
+			<td></td><td></td>
+			<td><input type="button" id="btnupdate" value="ADD" onclick="displayADD()"/></td>
+			<td><input type="button" id="btnupdate" value="SUB" onclick="displaySUB()"/></td>
+			<td><input type="button" id="btnupdate" value="MULTI" onclick="displayMULTI()"/></td>
+			<td><input type="button" id="btnupdate" value="DIV" onclick="displayDIV()"/></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td>
+				Result is
+			</td>
+			<td>
+				:
+			</td>
+			<td>
+				<input type="text" id="txtres" size="5"/>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

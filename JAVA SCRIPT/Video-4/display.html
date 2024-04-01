@@ -1,0 +1,31 @@
+<html>
+<head>
+<script language="javascript">
+	function display()
+	{
+			var name=txtname.value
+			alert("Your name is name "+name)
+	}
+</script>
+<body>
+	<table cellspacing="10">
+		<tr>
+			<td>
+				Enter your name
+			</td>
+			<td>
+				:
+			</td>
+			<td>
+				<input type="text" id="txtname" size="20"/>
+			</td>
+		</tr>
+	</table>
+	<table  cellpadding=5 cellspacing=35>
+		<tr>
+			<td></td><td></td>
+			<td><input type="button" id="btnupdate" value="Update" onclick="display()"/></td>
+		</tr>
+	</table>
+</body>
+</html>
